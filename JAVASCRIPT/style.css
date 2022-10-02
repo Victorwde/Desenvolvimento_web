@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+
+body {
+    font: 14pt arial;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'koulen';
+    font-weight: normal;
+}
+button {
+    background-color: brown;
+    border-radius: 8px;
+
+}

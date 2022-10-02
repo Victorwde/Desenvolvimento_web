@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Exercícios 6</title>
+    <script>
+        function calcularIMC(){
+            var altura = document.getElementById("altura").value;
+            var peso = document.getElementById("peso").value;
+            altura /= 100;
+            var imc = (peso / (altura * altura)).toFixed(2);
+            document.getElementById("resultadoIMC").innerHTML = "IMC: <strong>" + imc + "</strong>";
+        }
+    </script>
+</head>
+<body>
+    <h1>Exercício 6</h1>
+    <label for="altura">Altura (cm): </label>
+    <input id="altura" type="number" min="100" max="250"> <br>
+    <label for="peso">Peso (kg): </label>
+    <input id="peso" type="number" min="5" max="250"> <br>
+
+    <button onclick="calcularIMC()">Calcular IMC</button>
+
+    <div id="resultadoIMC">
+
+    </div>
+    <div id="extra">
+        <pre>
+            
+        </pre>
+    </div>
+</body>
+</html>
